@@ -1,8 +1,6 @@
-letters("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz").
 vowels("AEIOUYaeiouy").
 except("q", "u").
 
-letter(X) :- letters(Ls),member(X,Ls).
 vowel(X) :- vowels(Ls),member(X,Ls).
 
 firstv([H|_]) :- vowel(H).
