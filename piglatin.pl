@@ -1,4 +1,4 @@
-vowels("AEIOUYaeiouy").
+vowels("AEIOUaeiou").
 except("q", "u").
 
 vowel(X) :- vowels(Ls),member(X,Ls).
