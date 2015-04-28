@@ -9,7 +9,7 @@ Examples:
 
 ```prolog
 :- piglatin("the quick brown fox jumps over the lazy dog", X).
-X = 'ethay uickqay ownbray oxfay umpsjay overway ethay azylay ogday' ;
+X = 'ethay ickquay ownbray oxfay umpsjay overway ethay azylay ogday' ;
 false.
 ```
 ```prolog
