@@ -8,12 +8,12 @@ The predicate piglatin/2 converts an english phrase in an atom into pig latin.
 Examples:
 
 ```prolog
-    :- piglatin('the quick brown fox jumps over the lazy dog', X).
-    X = 'ethay uickqay ownbray oxfay umpsjay overway ethay azylay ogday' ;
-    false.
+:- piglatin("the quick brown fox jumps over the lazy dog", X).
+X = 'ethay uickqay ownbray oxfay umpsjay overway ethay azylay ogday' ;
+false.
 ```
 ```prolog
-    :- piglatin('pack my box with five dozen liquor jugs', X).
-    X = 'ackpay ymay oxbay ithway ivefay ozenday iquorlay ugsjay' ;
-    false.
+:- piglatin("pack my box with five dozen liquor jugs", X).
+X = 'ackpay ymay oxbay ithway ivefay ozenday iquorlay ugsjay' ;
+false.
 ```
