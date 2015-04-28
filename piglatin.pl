@@ -10,7 +10,9 @@ firstv([H|_]) :- vowel(H).
 
 firstc1([C,E|_]) :- except(C,E),!,fail.
 firstc1([C,V|_]) :- \+vowel(C),vowel(V).
+firstc1([C,121|_]) :- \+vowel(C).
 
+firstc2([C,121|_]) :- \+vowel(C),!,fail.
 firstc2([C,E|_]) :- except(C,E).
 firstc2([A,B|_]) :- \+vowel(A),\+vowel(B).
 
@@ -23,6 +25,7 @@ pigw(X) --> {firstc2(X)},inv2(X),"ay".
 
 pigp([]) --> [].
 pigp([H|T]) --> {pigw(H,X,[])},[X],pigp(T),!.
+
 
 split([]) --> [].
 split(X) --> {\+member(32,X)},[X].
