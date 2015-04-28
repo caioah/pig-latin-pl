@@ -4,7 +4,7 @@ English to Pig Latin converter written in SWI-Prolog.
 
 Usage
 -----
-The predicate piglatin/2 converts an english phrase in an atom into pig latin.
+The predicate piglatin/2 converts an english string into pig latin.
 Examples:
 
 ```prolog
